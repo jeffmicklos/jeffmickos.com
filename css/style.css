@@ -1,0 +1,383 @@
+@font-face {
+	font-family: 'Bembo';
+	src: url('../assets/BemboStd.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Bembo-Bold';
+	src: url('../assets/BemboStd-Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Bembo-Italic';
+	src: url('../assets/BemboStd-Italic.otf') format('opentype');
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	background: url(../images/dirt.png) top left repeat-x,
+				url(../images/bg.jpg)  top left repeat;
+	
+	font-family: Bembo, Georgia, 'Serif';
+	color: #3b3b3b;
+	font-size: 16px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+strong {
+	font-family: Bembo-Bold;
+	font-weight: normal;
+}
+
+sup {
+	font-size: 10px;
+	position: relative;
+	top: -5px;
+}
+
+.no-line-height {
+	line-height: 0;
+}
+
+.col-360 {
+	width: 360px;
+}
+
+.col-160 {
+	width: 160px;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.push-200 {
+	margin-left: 200px;
+}
+
+.push-40 {
+	margin-right: 40px;
+}
+
+.push-240 {
+	margin-right: 240px;
+}
+
+.shim-up {
+	margin-top: -5px;
+}
+
+.top-20 {
+	margin-top: 1.25em;
+}
+
+p {
+	font-size: 1em; /* 16px */
+	line-height: 1.25em; /* 20px */
+	/*margin: 0 0 1.25em 0;*/
+}
+
+.twenty {
+	font-size: 1.25em; /* 20px */
+	line-height: 1em; /* 20px */
+	margin-top: 1em;
+	margin-bottom: 0em;
+}
+
+.thirty {
+	font-size: 1.875em; /* 30px */
+	line-height: 1.3333em; /* 40px */
+	margin-bottom: 0.6667em;
+	margin-top: 0em;
+}
+
+.twenty-bottom {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+.syncopated {
+	/* line-height: 1.875em;  30px */
+	line-height: 34px;
+}
+
+.forty-bottom {
+	margin-bottom: 2em;
+}
+
+.forty-top {
+	margin-top: 2em;
+}
+
+#top-background {
+	background: url(bg_top.jpg) repeat-x;
+	height: 200px;		
+}
+
+.container {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+#content {
+	width: 560px;
+	float: right;
+	position: relative;
+	z-index: 10;
+	padding-top: 72px;
+}
+
+#sidebar {
+	width: 520px;
+	height: 400px;
+	float: left;
+}
+
+#footer {
+	-moz-box-shadow: 0 -5px 6px 0 #BBBBBB;
+	-webkit-box-shadow: 0 -5px 6px 0 #BBBBBB;
+	margin-top: 40px;
+	background: url(../images/dirt.png) top left repeat-x,
+				url(../images/footer_bg.png) top left repeat-x;
+}
+
+#paint {
+	/*position: absolute;
+	top: -350px;
+	left: 0;*/
+	position: relative;
+	left: -170px;
+	top: -390px;
+	z-index: 1;
+}
+
+#paint img {
+	position: absolute;
+}
+
+h1 {
+	font-size: 60px;
+	margin-bottom: 0.3333em;
+}
+
+.sixty {
+	font-size: 3.75em; /* 60px */
+	margin-top: 0.4em;
+	margin-bottom: 0em;
+}
+
+h3 {
+	color: #878787;
+}
+
+h5 {
+	font-size: 1.25em;
+	color: #979797;
+	font-family: Bembo-Italic;
+}
+
+#blogposts li {
+	border-bottom: 1px solid #dcdcdc;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+}
+
+#blogposts li:last-child {
+	border-bottom: none;
+}
+
+#blogposts li h4 {
+	font-size: 1.875em;
+	line-height: 1.3em;
+	margin-bottom: 0.44em;
+	margin-top: -13px;
+}
+
+#blogposts li h4 a,
+.outside-link {
+	color: #db4c7f;
+	text-decoration: none;
+	-webkit-transition: all 1s ease-out;
+}
+
+#blogposts li h4 a:hover,
+.outside-link:hover {
+	color: #db4c7f;
+	text-decoration: underline;
+}
+
+#blogposts li h4 a:active,
+.outside-link:active {
+	color: #eed1d0;
+	text-shadow: 0px 0px 70px #db4c7f;
+}
+
+.syndicated-list {
+	font-size: 1em;
+	line-height: 1.25em;
+	margin-top: -0.2em;
+}
+
+#footer h2 {
+	font-size: 30px;
+	margin-bottom: 1.15em;
+}
+
+#footer .container {
+	padding-top: 47px;
+}
+
+#footer label {
+	font-size: 16px;
+	color: #979797;
+	font-family: Bembo-Italic;
+	display: block;
+}
+
+#footer legend {
+	font-size: 30px;
+	margin-bottom: 1.15em;
+}
+
+#footer input,
+#footer textarea {
+	-moz-box-shadow: 1px 1.5px 1px #A9A9A9 inset;
+	-webkit-box-shadow: 1px 1.5px 1px #A9A9A9 inset;
+	color: inherit;
+	font-family: inherit;
+	font-size: 1em;
+	letter-spacing: 0.03em;
+	margin-bottom: 1.4em;
+	padding: 5px 0 0 3px;
+	width: 260px;
+	border: 3px solid #F7F4F6;
+	background-color: #f6f6f6;
+}
+
+#footer input:focus,
+#footer textarea:focus {
+	background-color: #ffffff;
+	
+}
+
+#footer input.success {
+	background: url("../images/icon_correct.png") no-repeat scroll 240px 6px #F6F6F6;
+}
+
+#footer input.error {
+	background: url("../images/icon_error.png") no-repeat scroll 240px 8px #F6F6F6;
+}
+
+#footer textarea {
+	width: 360px;
+	height: 160px;
+	line-height: 20px;
+}
+
+#footer .button {
+    background-color: #e7e7e7;
+    border-color: #ccc;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    color: #666;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    text-shadow: 0 1px 0 #fff;
+    width: auto;
+    display: block;
+    float: right;
+    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 1px #FFFFFF inset;
+    -webkit-box-shadow: 0 1px 1px #FFFFFF inset;
+}
+
+#footer .button:hover {
+	color: #999;
+    border-style: none;
+    -moz-box-shadow: 0 1px 1px #999 inset;
+    -webkit-box-shadow: 0 1px 1px #999 inset;
+}
+
+#footer #profiles li {
+	height: 16px;
+	width: 16px;
+	background: transparent url(../images/sprite_profiles.png) no-repeat scroll;
+	float: left;
+	margin-right: 10px;
+}
+
+#footer .container #profiles li a {
+	color: transparent;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+}
+
+#footer .container #profiles li a::-moz-selection {
+	color: transparent;
+	background: transparent;
+}
+
+#footer .container #profiles li a::selection {
+	color: transparent;
+	background: transparent;
+} 
+
+#footer #profiles .facebook {
+	background-position: 0px 0px;
+}
+
+#footer #profiles .linkedin {
+	background-position: -26px 0px;
+}
+
+#footer #profiles .twitter {
+	background-position: -52px 0px;
+}
+
+#footer #profiles .flickr {
+	background-position: -78px 0px;
+}
+
+#footer #profiles .github {
+	background-position: -106px 0px;
+}
+
+#footer #profiles .yelp {
+	background-position: -130px 0px;
+}
+
+#footer #profiles .lastfm {
+	background-position: -156px 0px;
+}
+
+#footer #profiles .dribbble {
+	background-position: -182px 0px;
+}
+
+ol[id^=list] li a {
+	text-decoration: none;
+	color: inherit;
+	-webkit-transition: all 1s ease-out;
+}
+
+ol[id^=list] li a:hover {
+	text-decoration: underline;
+}
+
+ol[id^=list] li a:active {
+	color: #eed1d0;
+	text-shadow: 0px 0px 70px purple;
+}
