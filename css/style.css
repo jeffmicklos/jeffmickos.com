@@ -3,10 +3,10 @@
 	src: url('../assets/BemboStd.otf') format('opentype');
 }
 
-@font-face {
+/*@font-face {
 	font-family: 'Bembo-Bold';
 	src: url('../assets/BemboStd-Bold.otf') format('opentype');
-}
+}*/
 
 @font-face {
 	font-family: 'Bembo-Italic';
@@ -155,7 +155,7 @@ p {
 	left: 0;*/
 	position: relative;
 	left: -170px;
-	top: -390px;
+	top: -40px;
 	z-index: 1;
 }
 
@@ -380,4 +380,27 @@ ol[id^=list] li a:hover {
 ol[id^=list] li a:active {
 	color: #eed1d0;
 	text-shadow: 0px 0px 70px purple;
+}
+
+a[class^=flickr-thumb] {
+	display: inline-block;
+	overflow: hidden;
+	background: url('../images/loader.gif') no-repeat scroll 50% 50% transparent;
+}
+
+.flickr-thumb-small {
+	height: 100px;
+	width: 160px;
+}
+	
+.flickr-thumb-small img {
+	position: relative;
+	top: -50%;
+	left: -50%;
+	width: 300px;
+}
+	
+.flickr-thumb-large {
+	height: 240px;
+	width: 360px;
 }

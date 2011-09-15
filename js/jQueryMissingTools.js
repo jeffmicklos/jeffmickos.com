@@ -56,6 +56,34 @@ $.extend({
 	    return $.grep(collection, function(member) {
 	           return functionToCall(member);
 	    }).length > 0
+	},
+	
+	shuffle: function(array) {
+		
+		return array.sort(function() {
+			return 0.5 - Math.random();
+		});
+		
+	},
+	
+	zip: function(arrayOne, arrayTwo) {
+		
+		var zippedArray = [];
+		
+		 $.each(arrayOne, function(i, item){
+
+		 	if (arrayTwo[i]) {
+	
+		 		zippedArray.push([
+		 			item, arrayTwo[i]
+		 		]);
+
+		 	}
+
+		 });
+		 
+		 return zippedArray;
+		
 	}
 
 });

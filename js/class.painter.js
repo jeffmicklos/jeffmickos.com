@@ -3,11 +3,11 @@ jeffmicklos.Painter = function() {
 	this.imgCache = [];
 	this.canvas = $('#paint');
 	this.preloadImages([
-		'images/paint/1.png',
-		'images/paint/2.png',
-		'images/paint/3.png',
-		'images/paint/4.png',
-		'images/paint/5.png'
+		'images/paint_new/1.png',
+		'images/paint_new/2.png',
+		'images/paint_new/3.png',
+		'images/paint_new/4.png',
+		'images/paint_new/5.png'
 	]);
 	
 	setTimeout(
