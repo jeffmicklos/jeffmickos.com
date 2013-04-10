@@ -3,11 +3,6 @@
 	src: url('../assets/BemboStd.otf') format('opentype');
 }
 
-/*@font-face {
-	font-family: 'Bembo-Bold';
-	src: url('../assets/BemboStd-Bold.otf') format('opentype');
-}*/
-
 @font-face {
 	font-family: 'Bembo-Italic';
 	src: url('../assets/BemboStd-Italic.otf') format('opentype');
@@ -22,8 +17,8 @@ body {
 				url(../images/bg.jpg)  top left repeat;
 	
 	font-family: Bembo, Georgia, 'Serif';
-	color: #3b3b3b;
-	font-size: 16px;
+	color: #333;
+	font-size: 17px;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 }
@@ -81,7 +76,7 @@ sup {
 
 p {
 	font-size: 1em; /* 16px */
-	line-height: 1.25em; /* 20px */
+	line-height: 1.42em; /* 20px */
 	/*margin: 0 0 1.25em 0;*/
 }
 
@@ -101,7 +96,7 @@ p {
 
 .twenty-bottom {
 	margin-top: 0;
-	margin-bottom: 1em;
+	margin-bottom: 1.42em;
 }
 
 .syncopated {
@@ -174,6 +169,12 @@ h1 {
 	margin-bottom: 0em;
 }
 
+.forty {
+	font-size: 2.35em; /* 60px */
+	margin-top: 0.4em;
+	margin-bottom: 0.501em;
+}
+
 h3 {
 	color: #878787;
 }
@@ -203,21 +204,21 @@ h5 {
 
 #blogposts li h4 a,
 .outside-link {
-	color: #db4c7f;
+	color: #15325E;
 	text-decoration: none;
 	-webkit-transition: all 1s ease-out;
 }
 
 #blogposts li h4 a:hover,
 .outside-link:hover {
-	color: #db4c7f;
+	color: #5576A7;
 	text-decoration: underline;
 }
 
 #blogposts li h4 a:active,
 .outside-link:active {
-	color: #eed1d0;
-	text-shadow: 0px 0px 70px #db4c7f;
+	color: #CFD5DF;
+	text-shadow: 0px 0px 70px #9FAAB9;
 }
 
 .syndicated-list {
